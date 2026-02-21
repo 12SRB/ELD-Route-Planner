@@ -1,0 +1,84 @@
+.trip-form { display: flex; flex-direction: column; }
+
+.form-header {
+  padding: 18px 24px 14px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(245,158,11,0.04);
+}
+.form-subtitle {
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-top: 4px;
+  font-family: var(--font-m);
+}
+
+.form-body { padding: 20px 24px 0; }
+
+.form-group-label {
+  font-family: var(--font-h);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.required-label { color: var(--amber); }
+.optional-label { color: var(--muted); margin-top: 18px; }
+
+.form-grid {
+  display: grid;
+  gap: 14px;
+}
+.required-grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.optional-grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+
+/* Field */
+.field { display: flex; flex-direction: column; gap: 5px; }
+.field-label {
+  font-family: var(--font-h);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--light);
+}
+.field-input {
+  background: var(--card);
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-family: var(--font-b);
+  font-size: 0.95rem;
+  padding: 9px 13px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  width: 100%;
+}
+.field-input:focus {
+  border-color: var(--amber);
+  box-shadow: 0 0 0 3px rgba(245,158,11,0.15);
+}
+.field-input::placeholder { color: var(--muted); }
+.field--error .field-input { border-color: var(--red); }
+.field-error { font-size: 0.75rem; color: #fca5a5; }
+.field-hint  { font-size: 0.75rem; color: var(--muted); }
+
+/* Assumptions */
+.assumptions-bar {
+  margin: 18px 24px 0;
+  background: rgba(59,130,246,0.08);
+  border: 1px solid rgba(59,130,246,0.25);
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 0.78rem;
+  color: var(--light);
+}
+.assumptions-bar strong { color: var(--blue); }
+
+/* Footer */
+.form-footer {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 18px 24px;
+}

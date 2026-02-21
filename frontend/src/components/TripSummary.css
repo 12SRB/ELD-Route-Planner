@@ -1,0 +1,106 @@
+.trip-summary { display: flex; flex-direction: column; height: 100%; }
+
+.summary-body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+}
+
+/* Stat Cards */
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  border-left-width: 3px;
+}
+.stat-card--amber  { border-left-color: var(--amber); }
+.stat-card--blue   { border-left-color: var(--blue); }
+.stat-card--green  { border-left-color: var(--green); }
+.stat-card--red    { border-left-color: var(--red); }
+.stat-card--muted  { border-left-color: var(--muted); }
+
+.stat-icon { font-size: 1.2rem; flex-shrink: 0; }
+.stat-info { display: flex; flex-direction: column; gap: 1px; }
+.stat-label {
+  font-family: var(--font-h);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.stat-value {
+  font-family: var(--font-m);
+  font-size: 1rem;
+  font-weight: 500;
+}
+.stat-value--amber { color: var(--amber); }
+.stat-value--blue  { color: var(--blue); }
+.stat-value--green { color: var(--green); }
+.stat-value--red   { color: var(--red); }
+.stat-value--muted { color: var(--light); }
+
+/* Stops */
+.stops-section { margin-top: 4px; }
+.stops-title {
+  font-family: var(--font-h);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+.stops-list { display: flex; flex-direction: column; gap: 5px; }
+.stop-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.78rem;
+  color: var(--light);
+  padding: 6px 10px;
+  background: var(--card);
+  border-radius: 6px;
+}
+.stop-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+.stop-dot--green  { background: var(--green); }
+.stop-dot--red    { background: var(--red); }
+.stop-dot--amber  { background: var(--amber); }
+.stop-dot--blue   { background: var(--blue); }
+.stop-dot--purple { background: var(--purple); }
+
+/* Day breakdown */
+.days-breakdown { margin-top: 4px; }
+.day-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  background: var(--card);
+  border-radius: 6px;
+  margin-bottom: 4px;
+  font-size: 0.78rem;
+  flex-wrap: wrap;
+}
+.day-num {
+  font-family: var(--font-h);
+  font-weight: 700;
+  color: var(--amber);
+  min-width: 44px;
+  font-size: 0.85rem;
+}
+.day-stat { padding: 2px 8px; border-radius: 4px; font-family: var(--font-m); font-size: 0.72rem; }
+.day-stat.driving  { background: rgba(245,158,11,0.15); color: var(--amber); }
+.day-stat.on-duty  { background: rgba(16,185,129,0.15); color: var(--green); }
+.day-miles { color: var(--muted); font-family: var(--font-m); font-size: 0.72rem; margin-left: auto; }
