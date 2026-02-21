@@ -4,7 +4,7 @@ A full-stack web application built with **Django** (backend) and **React** (fron
 
 ---
 
-## 📋 Project Overview
+## 📋 Project  Overview
 
 | Item | Details |
 |------|---------|
