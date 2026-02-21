@@ -249,22 +249,8 @@ Each generated log sheet includes (per FMCSA §395.8):
 | ELD Drawing | HTML Canvas (vanilla JS) | FMCSA log sheet rendering |
 | Deployment | Render + Vercel | Free-tier hosting |
 
----
 
-## 🎥 Loom Video Outline (3–5 min)
 
-1. **Overview** (30s) — What the app does and why
-2. **Demo** (2 min) — Enter trip details → Generate → Show map + stops + logs
-3. **Code walkthrough** (1.5 min):
-   - `hos_calculator.py` — HOS rules engine
-   - `views.py` — API + geocoding/routing
-   - `ELDLogs.jsx` — Canvas ELD drawing
-4. **Wrap up** (30s) — Deployment links
 
----
 
-## 📞 References
 
-- [FMCSA HOS Guide (2022)](https://www.fmcsa.dot.gov/regulations/hours-service)
-- [49 CFR Part 395](https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-395)
-- [OpenStreetMap](https://www.openstreetmap.org) · [OSRM](http://project-osrm.org)
